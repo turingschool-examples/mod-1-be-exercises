@@ -15,11 +15,11 @@ This is the primary repository you will use throughout module 1 at Turing.
 
 You will find almost all the interactive resources you will need here, and the rest on the [Turing Backend Website](https://backend.turing.edu/module1/).
 
-Let's take a look around.
+Each section has its own README to describe how to best use the provided resources. Let's take a look around.
 
 ## Table of Contents
 
-[Lesson Repos](./lesson_repos)
+[Lessons](./lessons)
 
 [Practice Exercises](./exercises)
 
