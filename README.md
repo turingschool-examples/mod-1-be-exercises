@@ -21,14 +21,14 @@ Let's take a look around.
 
 [Lesson Repos](./lesson_repos)
 
-Practice Exercises
+[Practice Exercises](./exercises)
 
-Practice Independent Challenges
+[Practice Independent Challenges](./practice_independent_challenges)
 
-Independent Challenges
+[Independent Challenges](./independent_challenges)
 
-Midmod
+[Midmod](./midmod)
 
-Projects
+[Projects](./projects)
 
-Gear Up
+[Gear Up](./gear_up)
