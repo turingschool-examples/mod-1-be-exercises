@@ -1,0 +1,1 @@
+# ./airconditionable.rb
