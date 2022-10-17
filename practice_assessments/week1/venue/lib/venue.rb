@@ -1,2 +1,0 @@
-class Venue
-end
