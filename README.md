@@ -9,6 +9,8 @@ Do associated ruby exercises stay in an exercises directory? Or should all enume
 
 Double check all lesson repo readmes for removing references to forking/cloning the repo
 
+Walk through adding calendar?
+
 # Welcome to Mod 1!
 
 This is the primary repository you will use throughout module 1 at Turing.
