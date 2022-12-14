@@ -1,25 +1,19 @@
+<!-- Updated 12/13/2022 -->
 # each
 
 ## Overview
 
-This repository was created as a resource for the BE Mod1 Lesson on `each`. It can be used in conjunction with the `Exploring #each` slide deck.
-  - [Slides](https://docs.google.com/presentation/d/1Vn4CZC9eNFs7FCV6__V1WCKeY1dVJGj3etLGNfVDLU4/edit?usp=sharing)
-
-## Setup
-
-You do not need to fork this repository unless you want a copy in your own Github account. For the purposes of the lesson, you can:
-  - Clone this repo
+This repository was created as a resource for the BE Mod1 Lesson on `each`.
 
 ## Making it run
 
-This repository has four folders. For the purposes of the lesson, the folder order is as follows:
+This exercise has four folders. For the purposes of the lesson, the folder order is as follows:
   - vocabulary
   - warm_up
   - exercises
   - practice
 
 In `exercises` folder you will see the following files. For the purposes of the lesson, the file order is as follows:
-  - `warm_up.rb`
   - `using_each.rb`
   - `transforming_elements.rb`
   - `subset.rb`
@@ -43,7 +37,7 @@ In `exercises` folder you will see the following files. For the purposes of the 
   end
   ```
 
-- In your terminal make sure that you `cd` into the directory that you created and put your cloned repository into. Then `cd each`.
+- In your terminal make sure that you `cd` into the "each" directory: `cd each`.
 - In your terminal you will follow this format to run the file and have it print:
 ```ruby
 ruby exercises/<name of file you want to run>
