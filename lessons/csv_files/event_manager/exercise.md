@@ -1,3 +1,4 @@
+<!-- Updated 12/13/2022 -->
 # Event Manager
 
 ## Group Exercise

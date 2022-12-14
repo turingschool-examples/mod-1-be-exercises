@@ -1,3 +1,4 @@
+<!-- Updated 12/13/2022 -->
 # Erroneous Creatures
 
 This is a collection of the standard Turing
@@ -12,10 +13,8 @@ Your job is to use the test suite, error messages,
 and tools like Pry to fix the mistakes.
 
 ### Setup
-
-```
-git clone git@github.com:turingschool-examples/erroneous_creatures.git
-```
+There is no additional setup. Make sure first change into the Erroneous Creates directory:
+`cd erroneous_creatures`
 
 
 ## Suggested Order

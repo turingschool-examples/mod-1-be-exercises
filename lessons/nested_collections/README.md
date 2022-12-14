@@ -1,9 +1,9 @@
+<!-- Updated 12/13/2022 -->
+
 # Nested Collections
 
-## Within the `Examples` directory you will find files that correlate with the `Nested Collections` lesson. You will work within this repo during the class in breakout rooms. During the lesson the instructor will notify you on which file you will be working in.
-
-## Set Up
-- Clone this repo
+## Setup
+Within the `Examples` directory you will find files that correlate with the `Nested Collections` [lesson](https://backend.turing.edu/module1/lessons/nested_collections). You will work within these exercises during the class in breakout rooms. During the lesson the instructor will notify you on which file you will be working in.
 
 ## Making it run
 - In each file you will see a collection

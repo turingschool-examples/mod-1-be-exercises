@@ -1,8 +1,9 @@
+<!-- Updated 12/13/2022 -->
+
 # Reaching Through Objects
-This repository is meant to be used in conjunction with the BE Mod 1 lesson called **Reaching Through Objects**.
+These exercises are meant to be used in conjunction with the BE Mod 1 lesson called **Reaching Through Objects**.
 
 ## How to Use
-1. Fork, then clone your forked repository.
 1. Use the `warmup` directory to get a sense of the exercises.
 1. Work through `exercise_1`.  
 1. When you want to get more advanced, work through as many of the `scenarios` as you can!

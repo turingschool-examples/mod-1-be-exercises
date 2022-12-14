@@ -1,3 +1,5 @@
+<!-- Updated 12/13/2022 -->
+
 # intro_to_testing
 
 <!-- TABLE OF CONTENTS -->
@@ -18,9 +20,7 @@
 
 Test Driven Development is a powerful tool used to drive your code. At Turing, TDD will be essential.
 RSpec is the testing framework that you will use during your time at Turing.
-This repository is used in conjunction with the `intro_to_testing` lesson and slides.
-
-You will need to `clone` this repository to your local. 
+This repository is used in conjunction with the `intro_to_testing` [lesson](https://backend.turing.edu/module1/lessons/intro_to_testing).
 
 We will work with the files in this order:
  - `interaction/example.md` to reference the interaction pattern used in lesson.
@@ -131,6 +131,7 @@ pry(main)> require './lib/student'
 1. We will working within our `spec` directory.
 2. Working with the interaction pattern above, we will be creating a `student`.
 3. Here is the basic setup for a test:
+
 ```ruby
 # student_spec.rb
 require 'rspec'
@@ -140,13 +141,17 @@ describe Student do
 
 end
 ```
+
 4. Within the describe there will be individual tests. These tests are initiated with a `it`. Here is what that looks like:
+
 ```ruby
 it 'the name of method' do
 
 end
 ```
+
 5. So let's take a look at the the test stages know as S.E.A.T (setup, execution, assertion, teardown):
+
 ```ruby
 # student_spec.rb
 require 'rspec'
@@ -170,7 +175,6 @@ end
 
 ## Practice
 
-- [slides](https://docs.google.com/presentation/d/1_-xvHXsZRiGaA366VBc2kDwOH2opapZpAhkQzrdOVP4/edit?usp=sharing)
 - [lesson](https://backend.turing.edu/module1/lessons/intro_to_testing)
 
 <div class="back-to-top-wrapper">

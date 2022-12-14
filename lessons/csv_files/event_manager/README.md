@@ -7,7 +7,7 @@ Before starting this tutorial, you should be comfortable with:
 
  * the topics covered in [Ruby in 100 Minutes](http://tutorials.jumpstartlab.com/projects/ruby_in_100_minutes.html)
  * installing a gem
- * using `IRB` (or `pry`)
+ * using `pry` (or `IRB`)
  * writing methods
 
 ## Learning Goals
