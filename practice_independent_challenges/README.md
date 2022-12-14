@@ -31,8 +31,7 @@ Example: [World Cup](./week3/world_cup)
 The week 4 challenge will involve three classes with only partial specifications. Students must think algorithmically to build an Object Oriented solution that solves the problem. Students will also be required to build a hash.
 
 Examples:
-[Boat Rental](./week4/boat_rental) |
-[Colorado Lottery](./week4/colorado_lottery)
+[Boat Rental](./week4/boat_rental) | [Colorado Lottery](./week4/colorado_lottery)
 
 ### Weeks 5 and 6
 
@@ -41,5 +40,4 @@ The week 5 and 6 challenges are a test of a student's knowledge of OOP and Ruby 
 The week 5 challenge will be a practice for the final in week 6.
 
 Examples:
-[Reunion](./week5/reunion)
-[Museo](./week5/museo)
+[Reunion](./week5/reunion) | [Museo](./week5/museo)
