@@ -23,7 +23,7 @@ Each section has its own README to describe how to best use the provided resourc
 
 [Lessons](./lessons)
 
-[Practice Exercises](./exercises)
+[Practice Exercises](./ruby_exercises)
 
 [Practice Independent Challenges](./practice_independent_challenges)
 
