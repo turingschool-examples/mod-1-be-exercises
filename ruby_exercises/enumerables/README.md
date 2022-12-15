@@ -31,7 +31,7 @@ into how each method is put together under the hood.
 $ cd ruby-exercises/enumerables/exercises_1
 ```
 
-Open up `map_pattern_spec.rb` and `map_spec.rb` in Atom, side by side:
+Open up `map_pattern_spec.rb` and `map_spec.rb` in your editor, side by side:
 
 ![Set up map and map_pattern_spec side by side](/images/enumerables-setup-map.jpg)
 
@@ -93,4 +93,3 @@ Here's how we recommend you work through the exercises:
 * Run the `map_pattern_spec.rb` and solve the first exercise
 * Run the `map_spec.rb` and solve the same exercise
 * Repeat for each matching pair of exercises
-

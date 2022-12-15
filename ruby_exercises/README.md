@@ -14,30 +14,15 @@ Each folder in this repository is a set of related exercises. Open up the folder
 
 ## Setup
 
-### 1. Clone this repository
+1. From the command line, `cd` into the `ruby-exercises` directory if you are not already here.
 
-You don't need to fork this repository; clone it to your laptop
+2. Install `bundler` gem
 
-in your `/turing` directory on your laptop (or whatever directory you want this repository to live inside of), run:
+  run `gem install bundler` in your terminal
 
-```
-// using ssh keys
-git clone git@github.com:turingschool/ruby-exercises.git
-// using https, if the above doesn't work:
-git clone https://github.com/turingschool/ruby-exercises.git
-```
+3. From the command line, run `bundle install`
 
-Once this command runs, you'll now have a "local" copy of this entire repository, living right on your laptop.
-
-### 2. From the command line, `cd` into the `ruby-exercises` directory.
-
-### 2. Install `bundler` gem
-
-run `gem install bundler` in your terminal
-
-### 3. From the command line, run `bundle install`
-
-You _should_ see something like this:
+  You _should_ see something like this:
 
 ```
 $ bundle install
