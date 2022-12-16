@@ -1,13 +1,3 @@
-Add section for pairing/review stuff (like peer code shares, feedback templates, dtr?)
-
-Add section for pd?
-
-Do we want students to answer CFU questions and submit a PR? If so, we can add those to project under appropriate lesson; downside-these questions will have to be maintained; students COULD create their own CFU md and still submit a PR so that way if questions in lesson plan change, students will just follow the lesson for the guide
-
-Do associated ruby exercises stay in an exercises directory? Or should all enumerable stuff move to the "lesson" directory?
-
-Walk through adding calendar?
-
 # Welcome to Mod 1!
 
 This is the primary repository you will use throughout module 1 at Turing.
@@ -18,8 +8,18 @@ Each section has its own README to describe how to best use the provided resourc
 
 ## Table of Contents
 
-[Lessons](./lessons)
+### Lessons
 
-[Practice Exercises](./ruby_exercises)
+You will find the starter code for many of your lessons in the [Lessons](./lessons) directory. Often, instructors will do code-alongs during lessons, and it can be helpful to follow along and take notes of your own.
 
-[Practice Independent Challenges](./practice_independent_challenges)
+### Practice Ruby Exercises
+
+This is a collection of exercises to practice various aspects of Ruby. Each folder in the [Practice Exercises](./ruby_exercises) directory is a set of related exercises. Open up the folder and read the README to learn more about them.
+
+### Practice Independent Challenges
+
+In week 6, students will participate in the Final Independent Challenge (also called Final Assessment) that will count towards the promotion decision. This 3 hour code challenge that students will complete independently, meaning the student cannot seek help from other students, mentors, etc. Students are allowed to reference notes, other projects, and the internet.
+
+In order to practice for the Final Independent Challenge in week 6, students will be given a weekly practice Independent Challenge starting in week 2. They will be submitted using a Github Pull Request, and instructors will give feedback in various forms. These are not formal assessments, but an opportunity for the student to practice their problem solving skills and receive feedback from instructors. Students are expected to complete the first three iterations.
+
+Students can find examples of Independent Challenges in the [Practice Independent Challenges](./practice_independent_challenges) directory.
