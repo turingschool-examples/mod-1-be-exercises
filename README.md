@@ -4,6 +4,16 @@ This is the primary repository you will use throughout module 1 at Turing.
 
 You will find almost all the interactive resources you will need here, and the rest on the [Turing Backend Website](https://backend.turing.edu/module1/).
 
+## Setup
+You should fork this repository and then clone YOUR fork to your computer. Make sure you don't clone the turingschool-examples repository.
+
+You can confirm that you have cloned the correct repository by running `git remote -v`. You should see something like this:
+
+  ```
+  origin	git@github.com:<YOUR_USERNAME>/mod-1-be-exercises.git (fetch)
+  origin	git@github.com:<YOUR_USERNAME>/mod-1-be-exercises.git (push)
+  ```
+
 Each section has its own README to describe how to best use the provided resources. Let's take a look around.
 
 ## Table of Contents
@@ -14,7 +24,9 @@ You will find the starter code for many of your lessons in the [Lessons](./lesso
 
 ### Practice Ruby Exercises
 
-This is a collection of exercises to practice various aspects of Ruby. Each folder in the [Practice Exercises](./ruby_exercises) directory is a set of related exercises. Open up the folder and read the README to learn more about them.
+This is a collection of exercises to practice various aspects of Ruby. Each folder in [Ruby Exercises](./ruby_exercises) is a set of related exercises. Open up the folder and read the README to learn more about them.
+
+For anyone familiar with the old ruby-exercises repo, these are the same ruby exercises from  [turingschool-examples/ruby-exercises](https://github.com/turingschool-examples/ruby-exercises). We have just consolidated all resources into one place.
 
 ### Practice Independent Challenges
 
