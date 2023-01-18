@@ -1,14 +1,14 @@
 # ./jeep.rb
 class Jeep
   def start
-    puts "Engine on!"
+    "Engine on!"
   end
 
   def stop
-    puts "Engine off!"
+    "Engine off!"
   end
 
   def drive
-    puts "All wheels go!"
+    "All wheels go!"
   end
 end

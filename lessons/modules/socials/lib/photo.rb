@@ -9,24 +9,23 @@ class Photo
 	end
 
 	def display
-		puts "-" * 50
-		puts "PHOTO"
-		puts "URL: #{image_source}"
-		puts "Caption: #{caption}"
+		display_string = "-" * 50 + "\n"
+		display_string += "PHOTO" + "\n"
+		display_string += "URL: #{image_source}" + "\n"
+		display_string += "Caption: #{caption}" + "\n"
 		comments.each do |id, text|
-			puts "#{id}: #{text}"
+			display_string += "#{id}: #{text}" + "\n"
 		end
-		puts "-" * 50
+		display_string += "-" * 50
+		return display_string
 	end
 
 	def add_comment(comment)
 		comments[next_comment_id] = comment
-		puts "Added '#{comment}' for a total of #{total_comments} comments."
 	end
 
 	def remove_comment(id)
 		comments.delete(id)
-		puts "Deleted comment with ID #{id}. Comment count now at #{total_comments}"
 	end
 
 	def next_comment_id

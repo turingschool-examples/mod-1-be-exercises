@@ -2,11 +2,22 @@
 
 ## Contents
 ```
-camry.rb
-jeep.rb
-engine.rb (Empty file)
-airconditionable.rb (Empty file)
+Classes:
+./lib/camry.rb
+./lib/jeep.rb
+./lib/airconditionable.rb (Empty file)
+./lib/engine.rb (Empty file)
+
+Tests:
+./spec/camry_spec.rb
+./spec/jeep_spec.rb
 ```
+
+## Running Tests
+
+* Navigate to this directory
+* run `rspec`
+* You should have 8 passing tests
 
 ## Exercise
 * Create an `Engine` module to extract the `start` and `stop` methods. (Yes, we know this isn’t following the "-able" naming conventions, but this is not a rule).
@@ -14,6 +25,7 @@ airconditionable.rb (Empty file)
   * turn the AC on and display **"Chilly air coming your way!"**
   * turn the AC off and display **"Temp is fine in here."**
   * It’s up to you what you want to name these methods.
+  * Write tests for these methods in both camry and jeep specs.
 
 * Now that `stop` and `start` are extracted to the module, add back in a `start` or `stop` method in one of your class. Have it return the string **"WAIIIIIIIT"**.
 * What happens when you run this method? Why?

@@ -8,23 +8,21 @@ class StatusUpdate
 	end
 
 	def display
-		puts "-" * 50
-		puts "STATUS UPDATE"
-		puts "Body: #{body}"
+		display_string = "-" * 50 + "\n"
+		display_string += "STATUS UPDATE" + "\n"
+		display_string += "Body: #{body}" + "\n"
 		comments.each do |id, text|
-			puts "#{id}: #{text}"
+			display_string += "#{id}: #{text}" + "\n"
 		end
-		puts "-" * 50
+		display_string += "-" * 50
 	end
 
 	def add_comment(comment)
 		comments[next_comment_id] = comment
-		puts "Added '#{comment}' for a total of #{total_comments} comments."
 	end
 
 	def remove_comment(id)
 		comments.delete(id)
-		puts "Deleted comment with ID #{id}. Comment count now at #{total_comments}"
 	end
 
 	def next_comment_id

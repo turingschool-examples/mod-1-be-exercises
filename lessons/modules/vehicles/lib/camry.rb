@@ -1,14 +1,14 @@
 # ./camry.rb
 class Camry
   def start
-    puts "Engine on!"
+    "Engine on!"
   end
 
   def stop
-    puts "Engine off!"
+    "Engine off!"
   end
 
   def drive
-    puts "Back wheels go!"
+    "Back wheels go!"
   end
 end
