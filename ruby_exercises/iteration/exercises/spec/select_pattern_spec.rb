@@ -95,7 +95,7 @@ RSpec.describe 'select pattern' do
     meals = ["chips and salsa", "chicken alfredo", "banana pudding"]
     #Your Code Here
 
-    expected(two_words).to eq(["chicken alfredo", "banana pudding"])
+    expect(two_words).to eq(["chicken alfredo", "banana pudding"])
   end
 
   xit 'test 8' do
