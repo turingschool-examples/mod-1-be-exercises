@@ -80,3 +80,4 @@ RSpec.describe Wallet do
 
     expect(wallet.cents).to eq(1)
   end
+end
