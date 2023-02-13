@@ -39,16 +39,24 @@ RSpec.describe 'Hashes' do
   end
 
   xit 'test 5' do
+    # In the line below, create a new hash called ingredients.
+    # Create a "tomatoes" key and a :carrots key with the corresponding values.
+    ingredients = ______
+
+    expect(ingredients["tomatoes"]).to eq(3)
+    expect(ingredients[:carrots]).to eq(7)
+  end
+
+  xit 'test 6' do
     # In the line below, create a new hash with
-    # default values of zero
-    # create a "tomatoes" key and a :carrots key
+    # default values of zero.
     ingredients = ______
 
     expect(ingredients["tomatoes"]).to eq(0)
     expect(ingredients[:carrots]).to eq(0)
   end
 
-  xit 'test 6' do
+  xit 'test 7' do
     books = {
       "John Steinbeck" => "Grapes of Wrath",
       "Harper Lee" => "To Kill a Mockingbird"
@@ -59,7 +67,7 @@ RSpec.describe 'Hashes' do
     expect(grapes).to eq("Grapes of Wrath")
   end
 
-  xit 'test 7' do
+  xit 'test 8' do
     books = {
       "John Steinbeck" => "Grapes of Wrath",
       "Harper Lee" => "To Kill a Mockingbird"
@@ -77,7 +85,7 @@ RSpec.describe 'Hashes' do
     expect(books).to eq(expected)
   end
 
-  xit 'test 8' do
+  xit 'test 9' do
     books = {
       "John Steinbeck" => "Grapes of Wrath",
       "Harper Lee" => "To Kill a Mockingbird"
@@ -93,7 +101,7 @@ RSpec.describe 'Hashes' do
     expect(books).to eq(expected)
   end
 
-  xit 'test 9' do
+  xit 'test 10' do
     books = {
       "John Steinbeck" => "Grapes of Wrath",
       "Harper Lee" => "To Kill a Mockingbird"
@@ -107,7 +115,7 @@ RSpec.describe 'Hashes' do
     expect(books).to eq(expected)
   end
 
-  xit 'test 10' do
+  xit 'test 11' do
     books = {
       John_Steinbeck: "Grapes of Wrath",
       Harper_Lee: "To Kill a Mockingbird"
@@ -118,7 +126,7 @@ RSpec.describe 'Hashes' do
     expect(grapes).to eq("Grapes of Wrath")
   end
 
-  xit 'test 11' do
+  xit 'test 12' do
     books = {
       John_Steinbeck: "Grapes of Wrath",
       Harper_Lee: "To Kill a Mockingbird"
@@ -136,7 +144,7 @@ RSpec.describe 'Hashes' do
     expect(books).to eq(expected)
   end
 
-  xit 'test 12' do
+  xit 'test 13' do
     books = {
       John_Steinbeck: "Grapes of Wrath",
       Harper_Lee: "To Kill a Mockingbird"
@@ -152,7 +160,7 @@ RSpec.describe 'Hashes' do
     expect(books).to eq(expected)
   end
 
-  xit 'test 13' do
+  xit 'test 14' do
     books = {
       John_Steinbeck: "Grapes of Wrath",
       Harper_Lee: "To Kill a Mockingbird"
@@ -166,7 +174,7 @@ RSpec.describe 'Hashes' do
     expect(books).to eq(expected)
   end
 
-  xit 'test 14' do
+  xit 'test 15' do
     ages = {
       "Jimmy" => 4,
       "Julio" => 8,
@@ -178,7 +186,7 @@ RSpec.describe 'Hashes' do
     expect(ages["Julio"]).to eq(9)
   end
 
-  xit 'test 15' do
+  xit 'test 16' do
     ages = {
       Jimmy: 4,
       Julio: 8,
@@ -190,7 +198,7 @@ RSpec.describe 'Hashes' do
     expect(names).to eq([:Jimmy, :Julio, :Juliet])
   end
 
-  xit 'test 16' do
+  xit 'test 17' do
     ages = {
       Jimmy: 4,
       Julio: 8,
@@ -202,7 +210,7 @@ RSpec.describe 'Hashes' do
     expect(age_list).to eq([4, 8, 9])
   end
 
-  xit 'test 17' do
+  xit 'test 18' do
     ages = {
       Jimmy: 4,
       Julio: 8,
@@ -214,7 +222,7 @@ RSpec.describe 'Hashes' do
     expect(num_pairs).to eq(3)
   end
 
-  xit 'test 18' do
+  xit 'test 19' do
     ages = {
       Jimmy: 4,
       Julio: 8,
@@ -231,7 +239,7 @@ RSpec.describe 'Hashes' do
     expect(jackie_in_hash).to eq(false)
   end
 
-  xit 'test 19' do
+  xit 'test 20' do
     ages = {
       Jimmy: 4,
       Julio: 8,
