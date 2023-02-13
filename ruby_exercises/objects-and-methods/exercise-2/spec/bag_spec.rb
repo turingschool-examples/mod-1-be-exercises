@@ -100,8 +100,9 @@ RSpec.describe Bag do
     bag = Bag.new
     bag << Candy.new('Lifesavers')
 
-    candy = bag.take(1)
-    expect(candy.type).to eq('Lifesavers')
+    taken = bag.take(1)
+    expect(taken.size).to eq(1)
+    expect(taken[0].type).to eq('Lifesavers')
   end
 end
 
