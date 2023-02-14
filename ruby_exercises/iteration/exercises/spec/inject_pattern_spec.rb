@@ -124,7 +124,7 @@ RSpec.describe 'inject pattern test' do
         quantity: 20
       }
     }
-    # Iterate over the toppings array defined above to find
+    # Iterate over the toppings hash defined above to find
     # total calories. You will need to multiply each topping's
     # calorie count by the quantity
 
