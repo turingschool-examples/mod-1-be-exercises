@@ -2,14 +2,14 @@ RSpec.describe 'find pattern' do
 
   it 'test 1' do
     ages = [39, 45, 29, 24, 50]
-    younger_than_thirty = nil
+    first_younger_than_thirty = nil
     ages.each do |age|
       if age < 30
-        younger_than_thirty = age
+        first_younger_than_thirty = age
         break
       end
     end
-    expect(younger_than_thirty).to eq(29)
+    expect(first_younger_than_thirty).to eq(29)
   end
 
   it 'test 2' do
@@ -20,24 +20,24 @@ RSpec.describe 'find pattern' do
       margaret: 24,
       miguel: 50
     }
-    younger_than_thirty = nil
+    first_younger_than_thirty = nil
     ages.each do |name, age|
       if age < 30
-        younger_than_thirty = name
+        first_younger_than_thirty = name
         break
       end
     end
-    expect(younger_than_thirty).to eq(:ladonna)
+    expect(first_younger_than_thirty).to eq(:ladonna)
   end
 
   xit 'test 3' do
     ages = [39, 45, 29, 24, 50]
-    older_than_fifty = nil
+    first_older_than_fifty = nil
     ages.each do |age|
       # Your Code Here
     end
 
-    expect(older_than_fifty).to be_nil
+    expect(first_older_than_fifty).to be_nil
   end
 
   xit 'test 4' do
@@ -48,20 +48,20 @@ RSpec.describe 'find pattern' do
       margaret: 24,
       miguel: 50
     }
-    older_than_fifty = nil
+    first_older_than_fifty = nil
     ages.each do |name, age|
       # Your Code Here
     end
 
-    expect(older_than_fifty).to be_nil
+    expect(first_older_than_fifty).to be_nil
   end
 
   xit 'test 5' do
     ages = [39, 45, 29, 24, 50]
-    multiple_of_three = nil
+    first_multiple_of_three = nil
     # Your Code Here
 
-    expect(multiple_of_three).to eq(39)
+    expect(first_multiple_of_three).to eq(39)
   end
 
   xit 'test 6' do
@@ -72,10 +72,10 @@ RSpec.describe 'find pattern' do
       margaret: 24,
       miguel: 50
     }
-    multiple_of_three = nil
+    first_multiple_of_three = nil
     # Your Code Here
 
-    expect(multiple_of_three).to eq(:abdi)
+    expect(first_multiple_of_three).to eq(:abdi)
   end
 
   xit 'test 7' do
@@ -102,7 +102,7 @@ RSpec.describe 'find pattern' do
     numbers = [3, 7, 13, 11, 10, 2, 17]
     # Your Code Here
 
-    expect(even).to eq(10)
+    expect(first_even).to eq(10)
   end
 
   xit 'test 10' do
@@ -115,7 +115,7 @@ RSpec.describe 'find pattern' do
     }
     # Your Code Here
 
-    expect(pending).to eq(:books)
+    expect(first_pending).to eq("books").or eq("food")
   end
 
   xit 'test 11' do
@@ -128,6 +128,6 @@ RSpec.describe 'find pattern' do
     }
     # Your Code Here
 
-    expect(starts_with_b).to eq("backpack")
+    expect(starts_with_s).to eq("shoes")
   end
 end
