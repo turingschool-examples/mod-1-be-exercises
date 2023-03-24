@@ -31,7 +31,7 @@ RSpec.describe Hippogriff do
     expect(hippogriff.moonrocks).to eq([])
   end
 
-  it "when it flies it collects a unique moonrock" do
+ it "when it flies it collects a unique moonrock" do
     hippogriff = Hippogriff.new("jane", :magenta)
     rock = Moonstone.new("sparkly")
 
