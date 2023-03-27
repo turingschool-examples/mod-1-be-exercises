@@ -26,7 +26,7 @@ RSpec.describe Potluck do
     expect(potluck.dishes.length).to eq(2)
   end
 
-  xit "gets_all_dishes_from_category" do
+  it "gets_all_dishes_from_category" do
     potluck = Potluck.new("7-13-18")
     couscous_salad = Dish.new("Couscous Salad", :appetizer)
     summer_pizza = Dish.new("Summer Pizza", :appetizer)
@@ -38,9 +38,10 @@ RSpec.describe Potluck do
     potluck.add_dish(roast_pork)
     potluck.add_dish(cocktail_meatballs)
     potluck.add_dish(candy_salad)
-    potluck.get_all_from_category(:appetizer)
     
-    expect
+    expect(potluck.get_all_from_category(:appetizer)).to eq([couscous_salad, summer_pizza])
+    expect(potluck.get_all_from_category(:appetizer).first).to eq([candy_salad])
+    expect(potluck.get_all_from_category(:appetizer).first.name).to eq("Couscous Salad")
   end
 
 end
