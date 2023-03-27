@@ -6,8 +6,12 @@ class Potluck
     @dishes = []
   end
 
-  def add_dish(name)
-    dishes << Potluck.new(name)
-    name
+  def add_dish(dish)
+    dishes << dish
+    dish
   end
+
+  # def get_all_from_category(category)
+  #   until potluck.dishes == []
+  # end
 end
