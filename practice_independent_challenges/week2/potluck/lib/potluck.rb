@@ -11,7 +11,9 @@ class Potluck
     dish
   end
 
-  # def get_all_from_category(category)
-  #   until potluck.dishes == []
-  # end
+  def get_all_from_category(category)
+    dishes.select do |dish|
+      dish.category == :appetizer
+    end
+  end
 end
