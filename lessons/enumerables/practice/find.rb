@@ -15,9 +15,7 @@ end
 def no_waldo
     words = ["scarf", "sandcastle", "flag", "pretzel", "crow", "key"]
     found = words.find do |word|
-
-      # Your code goes here
-
+        word == "waldo"
     end
 
     # expected return value is nil
@@ -25,64 +23,56 @@ end
 
 def find_waldo
     words = ["noise", "dog", "fair", "house", "waldo", "bucket", "fish"]
-
-    # Your code goes here
+    words.find {|word| word == "waldo"}
 
     # expected return value is "waldo"
 end
 
 def cannot_find_3_letter_words
     words = ["piglet", "porridge", "bear", "blueberry"]
-
-    # Your code goes here
+    words.find {|word| word.length == 3}
 
     # expected return value is nil
 end
 
 def find_13
     numbers = [2, 13, 19, 8, 3, 27]
-
-    # Your code goes here
+    numbers.find {|number| number == 13}
 
     # expected return value is 13
 end
 
 def find_first_even_number
     numbers = [3, 7, 13, 11, 10, 2, 17]
-
-    # Your code goes here
+    numbers.find {|number| number.even?}
 
     # expected return value is 10
 end
 
 def find_first_multiple_of_3
     numbers = [2, 8, 9, 27, 24, 5]
-
-    # Your code goes here
+    numbers.find {|number| number % 3 == 0}
 
     # expected return value is 9
 end
 
 def find_first_word_starting_with_q
     words = ["weirdo", "quill", "fast", "quaint", "quitter", "koala"]
-
-    # Your code goes here
+    words.find {|word| word.start_with?("q")}
 
     # expected return value is "quill"
 end
 
 def find_first_word_ending_with_er
     words = ["biggest", "pour", "blight", "finger", "pie", "border"]
-
-    # Your code goes here
+    words.find {|word| word.end_with?("er")}
 
     # expected return value is "finger"
 end
 
 def find_first_number_greater_than_20
     numbers = [1, 8, 19, 21, 29, 31, 34]
-
-    # Your code goes here
+    numbers.find {|number| number > 20}
 
     # expected return value is 21
 end
