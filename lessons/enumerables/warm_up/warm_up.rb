@@ -2,9 +2,12 @@
 # and returns an array of all names upcased.
 
 kardashians = ["kris", "kim", "kourtney", "khloe", "rob"]
-
 def upcase_names(names)
- # your code here
+  arr = []
+  names.each do |name|
+    arr << name.upcase
+  end
+  arr
 end 
 
 p upcase_names(kardashians)
