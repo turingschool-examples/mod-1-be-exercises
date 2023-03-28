@@ -4,64 +4,68 @@
 
 def capitalize
     names = ["alice", "bob", "charlie"]
-
-    # Your code goes here
+    names.map do |name|
+        name.capitalize
+    end
 
     # expected return value is ["Alice", "Bob", "Charlie"]
 end
 
 def doubles
     numbers = [1, 2, 3, 4, 5]
-
-    # Your code goes here
-
+    numbers.map {|num| num * 2}
     # expected return value is [2, 4, 6, 8, 10]
 end
 
 def squares
     numbers = [1, 2, 3, 4, 5]
-
-    # Your code goes here
+    numbers.map do |number|
+        number * number
+    end
 
     # expected return value is [1, 4, 9, 16, 25]
 end
 
 def lengths
     names = ["alice", "bob", "charlie", "david", "eve"]
-
-    # Your code goes here
-
+    names.map {|name| name.length}
+    
     # expected return value is [5, 3, 7, 5, 3]
 end
 
 def normalize_zip_codes
     numbers = [234, 10, 9119, 38881]
-
-    # Your code goes here
-
+    # numbers.map do |number|
+    #     number.to_s.rjust(5, '0')
+    # end
+    
+    numbers.map {|number| number.to_s.rjust(5,'0')}
+    
     # expected return value is ["00234", "00010", "09119", "38881"]
 end
 
 def backwards
     names = ["alice", "bob", "charlie", "david", "eve"]
-
-    # Your code goes here
-
+    names.map {|name| name.reverse}
+    
     # expected return value is ["ecila", "bob", "eilrahc", "divad", "eve"]
 end
 
 def words_with_no_vowels
     words = ["green", "sheep", "travel", "least", "boat"]
-
-    # Your code goes here
-
+    words.map {|word| word.delete "aeiou"}
+    
     # expected return value is ["grn", "shp", "trvl", "lst", "bt"]
 end
 
 def trim_last_letter
     animals = ["dog", "cat", "mouse", "frog", "platypus"]
+    animals.map do |animal|
+        animal.chop
+    end
 
-    # Your code goes here
+    # alternative
+    # animals.map {|animal| animal.chop}
 
     # expected return value is ["do", "ca", "mous", "fro", "platypu"]
 end
