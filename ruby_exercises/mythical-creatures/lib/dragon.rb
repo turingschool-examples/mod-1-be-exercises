@@ -10,10 +10,8 @@ class Dragon
         @eat_counter += 1
     end
     def hungry?
-        if @eat_counter >= 3
-            false
-        else true
-        end
+        return false if @eat_counter >= 3
+        true
     end
 
 
