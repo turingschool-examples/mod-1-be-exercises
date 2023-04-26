@@ -10,7 +10,6 @@ class Vampire
         @drink_counter += 1
     end
     def thirsty
-        @thirsty
         return false if @drink_counter >= 1
         true
     end
