@@ -20,8 +20,8 @@ Keep ping-ponging back-and-forth as you work through the files.
 
 Here's the order to work through:
 
-* `map`
-* `select`
+* DONE -> `map`
+* DONE -> `select`
 * `find` (aka `detect`)
 * `sort_by`
 * `count`
