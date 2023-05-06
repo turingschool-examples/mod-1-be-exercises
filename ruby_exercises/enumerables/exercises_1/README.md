@@ -22,7 +22,7 @@ Here's the order to work through:
 
 * DONE -> `map`
 * DONE -> `select`
-* `find` (aka `detect`)
+* DONE -> `find` (aka `detect`)
 * `sort_by`
 * `count`
 * `reject`
