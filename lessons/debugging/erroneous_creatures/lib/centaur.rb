@@ -9,6 +9,7 @@ class Centaur
     @standing = standing
     @laying = laying
     @sleeping = sleeping
+    @crankiness = 0
   end
 
   def shoot
@@ -31,9 +32,9 @@ class Centaur
 
   def cranky?
     if @crankiness < 3
-      "false"
+      false
     else
-      "true"
+      true
     end
   end
 
@@ -42,16 +43,18 @@ class Centaur
   end
 
   def sleep
-    if @standing
+    if @standing == true
       "NO!"
     else
       @sleeping = true
       @crankiness = 0
+      "Zzz"
     end
   end
 
   def lay_down
     @crankiness = 3
+    @sleeping = true
     @standing = false
     @laying = true
   end

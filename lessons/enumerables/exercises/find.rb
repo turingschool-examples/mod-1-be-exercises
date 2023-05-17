@@ -4,11 +4,23 @@
 def find_first_long_named_sister
     sisters = ["Rose", "Kathleen", "Eunice", "Patricia", "Jean"]
   
-    ### YOUR CODE HERE
-
+    big_sister = []
+    sisters.each do |sister|
+        if sister.length > 4
+            big_sister << sister
+        end
+    end
+    big_sister.first
     # should return "Kathleen"
 end
 
+def find_big_sister
+    sisters = ["Rose", "Kathleen", "Eunice", "Patricia", "Jean"]
 
+    sisters.find do |sister|
+        sister.length > 4
+    end
+end
 
 p find_first_long_named_sister
+p find_big_sister

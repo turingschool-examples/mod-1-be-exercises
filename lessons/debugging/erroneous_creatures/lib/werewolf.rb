@@ -6,7 +6,7 @@ class Werewolf
                 :change,
                 :werewolf
 
-  def initialize(name, location="london")
+  def initialize(name, location = "London")
     @name = name
     @location = location
     @human = true
@@ -14,6 +14,10 @@ class Werewolf
     @werewolf = false
   end
 
+  def location
+    @location
+  end
+  
   def human?
     if @change.odd?
       false
