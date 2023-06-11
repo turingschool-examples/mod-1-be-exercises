@@ -25,27 +25,38 @@ RSpec.describe Pirate do
   it 'is not cursed by default' do
     pirate = Pirate.new('Jack')
 
-    expect(pirate.cursed?).to be false
+    expect(pirate.cursed).to be false
 
     pirate.commit_heinous_act
-    expect(pirate.cursed?).to be false
+    expect(pirate.cursed).to be false
 
     pirate.commit_heinous_act
-    expect(pirate.cursed?).to be false
+    expect(pirate.cursed).to be false
 
     pirate.commit_heinous_act
-    expect(pirate.cursed?).to be true
+    expect(pirate.cursed).to be true
   end
 
   it 'has a booty' do
     # create a pirate
+    jeff = Pirate.new("Jeff")
     # check that the pirate starts with 0 booty
+    expect(jeff.booty).to be 0
+
   end
 
   it 'gets 100 booty for robbing a ship' do
     # create a pirate
+    steve = Pirate.new("Steve")
     # rob some ships
+    steve.robs_ship
+
+    5.times do
+      steve.robs_ship
+    end
     # check that the pirate got 100 booty for each ship it robbed
+    expect(steve.booty).to be >100
+    require "pry"; binding.pry
   end
 
 end
