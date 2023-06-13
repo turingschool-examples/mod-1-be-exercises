@@ -82,4 +82,30 @@ RSpec.describe Reunion do
       expect(reunion.total_owed).to eq(expected)
     end
   end
+
+  describe "#summary" do
+    it "can return a string of each participant & total owed, separated by line break" do
+      reunion = Reunion.new("1406 BE")
+      activity_1 = Activity.new("Brunch")
+      activity_2 = Activity.new("Basketball")
+      activity_3 = Activity.new("Bounchy Castle")
+
+      reunion.add_activity(activity_1)
+      reunion.add_activity(activity_2)
+      reunion.add_activity(activity_3)
+
+      activity_1.add_participant("Sam", 40) 
+      activity_1.add_participant("Frodo", 20) 
+
+      activity_2.add_participant("Sam", 10) 
+      activity_2.add_participant("Frodo", 50) 
+
+      activity_3.add_participant("Bilbo", 20)
+      activity_3.add_participant("Frodo", 20)
+
+      expected = "Sam: 10\nFrodo: -10\nBilbo: 0"
+
+      expect(reunion.summary).to eq(expected)
+    end
+  end
 end

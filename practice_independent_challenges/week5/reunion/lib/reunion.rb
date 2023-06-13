@@ -42,4 +42,21 @@ class Reunion
   # iterate through all activities
   # call #owed on activity
   # build hash with differences across all activities
+
+  def summary
+    summary = ""
+
+      total_owed.each do |participant, amount|
+        summary += "#{participant}: #{amount}\n"
+      end
+
+    summary.chomp
+  end
+
+  # PSEUDOCODE for #summary:
+  # set summary to an empty string
+  # call total_owed -> create a string based on key & values
+  # return that string
+
+
 end
