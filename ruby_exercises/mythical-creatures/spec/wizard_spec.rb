@@ -17,7 +17,7 @@ RSpec.describe Wizard do
     expect(wizard.bearded?).to be true
   end
 
-  it 'is not always bearded' do
+ it 'is not always bearded' do
     wizard = Wizard.new('Valerie', bearded: false)
     expect(wizard.bearded?).to be false
   end
@@ -34,19 +34,31 @@ RSpec.describe Wizard do
 
   it 'starts rested' do
     # create wizard
+    wizard = Wizard.new("Antoine", bearded: false)
+    expect(wizard.rested?).to eq(true)
     # .rested? returns true
   end
 
   it 'can cast spells' do
     # create wizard
+    wizard = Wizard.new("Jeff", bearded: true)
+    expect(wizard.cast).to eq("MAGIC MISSLE")
     # .cast returns "MAGIC MISSILE!"
   end
 
   it 'gets tired after casting three spells' do
     # create wizard
+    wizard = Wizard.new("Jeff", bearded: true)
     # casts spell twice
+    wizard.cast
+    wizard.cast
     # check if wizard is rested
+    expect(wizard.rested?).to eq(true)
     # casts spell
+    wizard.cast
+    # require "pry"; binding.pry
     # check wizard is not rested
+    expect(wizard.rested?).to eq(false)
+    # require "pry"; binding.pry
   end
 end
