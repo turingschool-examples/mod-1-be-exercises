@@ -42,6 +42,7 @@ RSpec.describe Medusa do
     medusa.stare(victim2)
     medusa.stare(victim3)
     expect(medusa.statues.length).to eq (3)
+    # require 'pry'; binding.pry
   end
 
   it 'if a fourth victim is stoned the first is unstoned' do
@@ -59,8 +60,10 @@ RSpec.describe Medusa do
     medusa.stare(victim4)
     # require "pry"; binding.pry
     expect(medusa.statues.length).to eq (3)
+    expect(victim1.stoned?).to be false
+    expect(victim4.stoned?).to be true 
     victim5 = Person.new("ted")
     medusa.stare(victim5)
-    require "pry"; binding.pry
+    # require "pry"; binding.pry
   end
 end

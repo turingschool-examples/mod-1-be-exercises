@@ -58,25 +58,44 @@ class Medusa
     @name = name
     @statues = []
   end
-  def stare(person)
-    @statues << person
-    person.turn_to_stone
-    if statues.length > 3
-      @statues.shift
+  def stare(victim)
+      @statues << victim
+      victim.make_stoned
+      process_extra_victims
+       
+    # if statues.length <= 2
+    #   # @statues.shift
+    #   # victim.stoned = true
+    #   victim.make_stoned
+    # else 
+    #   old_victim = @statues.shift
+    #   # old_victim.stoned = false
+    #   old_victim.make_unstoned
+    #   victim.make_stoned 
+    #   @statues << victim   
     end
-    @statues 
-  end
+
+    def process_extra_victims
+      return false if statues.count <= 3
+      old_victim = statues.shift
+      old_victim.make_unstoned
+    end
+    # @statues 
+    #thought this was necessary to return the values of the statues method, but the above does it just fine
 end
 
 class Person
-  attr_reader :name, :stoned
-
+  attr_reader :name
+  # attr_accessor :stoned 
   def initialize(name)
     @name = name
     @stoned = false
   end
-  def turn_to_stone
-    @stoned = true
+  def make_unstoned
+    @stoned = false 
+  end
+  def make_stoned
+    @stoned = true 
   end
   def stoned?
     @stoned
