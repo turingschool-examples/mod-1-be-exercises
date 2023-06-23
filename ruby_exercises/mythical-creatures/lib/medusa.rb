@@ -78,7 +78,9 @@ class Medusa
     def process_extra_victims
       return false if statues.count <= 3
       old_victim = statues.shift
+      # require "pry"; binding.pry
       old_victim.make_unstoned
+      # require "pry"; binding.pry
     end
     # @statues 
     #thought this was necessary to return the values of the statues method, but the above does it just fine

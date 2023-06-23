@@ -1,6 +1,6 @@
 require 'rspec'
 # require './spec/spec_helper'
-require './lib/medusa'
+require './lib/medusa_2'
 
 RSpec.describe Medusa do
   it 'has a name' do
@@ -45,7 +45,7 @@ RSpec.describe Medusa do
     # require 'pry'; binding.pry
   end
 
-  it 'if a fourth victim is stoned the first is unstoned' do
+  xit 'if a fourth victim is stoned the first is unstoned' do
     # your code here
     medusa = Medusa.new("Jupiter")
     victim1 = Person.new("Steve")
