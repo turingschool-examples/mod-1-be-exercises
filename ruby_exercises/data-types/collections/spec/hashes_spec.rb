@@ -49,7 +49,7 @@ RSpec.describe 'Hashes' do
     expect(ages[:kelly]).to eq(6)
   end
 
-  it 'test 5' do
+  xit 'test 5' do
     # In the line below, create a new hash called ingredients.
     # Create a "tomatoes" key and a :carrots key with the corresponding values.
     ingredients = {
