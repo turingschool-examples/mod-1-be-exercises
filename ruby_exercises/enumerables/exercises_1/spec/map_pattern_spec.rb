@@ -64,7 +64,7 @@ RSpec.describe 'map pattern' do
     # Your code goes here
     without_vowels = []
     words.each do |word|
-      without_vowels<< word.gsub(/[aeiou]/, "")
+      without_vowels << word.gsub(/[aeiou]/, "")
     end
     expect(without_vowels).to  eq(["grn", "shp", "trvl", "lst", "bt"])
   end
@@ -74,9 +74,10 @@ RSpec.describe 'map pattern' do
     # Your code goes here
     trimmed = []
     animals.each do |animal|
-      trimmed<< animal.chop 
+      trimmed << animal.chop 
     end
 
     expect(trimmed).to eq(["do", "ca", "mous", "fro", "platypu"])
   end
 end
+
