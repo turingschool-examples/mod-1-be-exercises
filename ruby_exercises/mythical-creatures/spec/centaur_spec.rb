@@ -124,7 +124,7 @@ RSpec.describe Centaur do
     centaur = Centaur.new('George', 'Palomino')
     centaur.lay_down
     expect(centaur.drinks_potion).to eq  "How could I possibly drink this while laying down?"
-    
+    require "pry"; binding.pry
     # your code here
   end
   
