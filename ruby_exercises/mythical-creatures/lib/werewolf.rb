@@ -30,7 +30,7 @@ class Werewolf
     return if human? #The method exists is the werewold.human? == true 
 
     victim.status = :dead 
-    @victims_consumed << victim 
+    @victims_consumed << victim  
     @hungry = false
   end
   # require "pry"; binding.pry

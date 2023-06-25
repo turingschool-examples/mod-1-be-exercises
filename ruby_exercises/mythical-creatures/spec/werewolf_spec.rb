@@ -22,6 +22,7 @@ RSpec.describe Werewolf do
     werewolf.change!
     expect(werewolf.wolf?).to be true
     expect(werewolf.human?).to be false
+    # require "pry"; binding.pry
   end
 
   it 'when starting as a human, changing again makes it be human again' do
