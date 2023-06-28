@@ -41,6 +41,7 @@ RSpec.describe Ogre do
     expect(human.notices_ogre?).to be true
   end
 
+
   it 'is noticed by humans the sixth time' do
     ogre = Ogre.new('Brak')
     human = Human.new
