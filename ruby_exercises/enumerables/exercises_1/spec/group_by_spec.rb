@@ -8,39 +8,48 @@ RSpec.describe 'group by' do
     expect(grouped).to eq(expected)
   end
 
-  xit 'group by odd and even' do
+  it 'group by odd and even' do
     numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
     odd_and_even = numbers.group_by do |number|
       # Your code goes here
+       if number.odd?
+        1
+       else
+        0
+       end
     end
     expected = {1=>[1, 1, 3, 5, 13, 21, 55], 0=>[2, 8, 34]}
     expect(odd_and_even).to eq(expected)
   end
 
-  xit 'group by first letter' do
+  it 'group by first letter' do
     words = ["ant", "axis", "albatross", "bolt", "badge", "butter", "car", "cdr", "column"]
     # Your code goes here
+    words_by_first_letter = words.group_by {|word| word[0]}
     expected = {"a"=>["ant", "axis", "albatross"], "b"=>["bolt", "badge", "butter"], "c"=>["car", "cdr", "column"]}
     expect(words_by_first_letter).to eq(expected)
   end
 
-  xit 'group by uniqueness' do
+  it 'group by uniqueness' do
     words = ["one", "two", "one", "TWO", "three", "one", "three", "three", "three"]
     # Your code goes here
+    grouped = words.group_by {|word| word.downcase}
     expected = {"one"=>["one", "one", "one"], "two"=>["two", "TWO"], "three"=>["three", "three", "three", "three"]}
     expect(grouped).to eq(expected)
   end
 
-  xit 'grouped by number of zeroes' do
+  it 'grouped by number of zeroes' do
     numbers = [1, 3, 500, 200, 4000, 3000, 10000, 90, 20, 500000]
     # Your code goes here
+    grouped = numbers.group_by {|number| number.to_s.count("0")}
     expected = {0=>[1, 3], 2=>[500, 200], 3=>[4000, 3000], 4=>[10000], 1=>[90, 20], 5=>[500000]}
     expect(grouped).to eq(expected)
   end
 
-  xit 'grouped by order of magnitude' do
+  it 'grouped by order of magnitude' do
     numbers = [1, 3, 503, 239, 4938, 3932, 19982, 93, 21, 501787]
     # Your code goes here
+    grouped = numbers.group_by {|number| number.to_s.length}
     expected = {1=>[1, 3], 2=>[93, 21], 3=>[503, 239], 4=>[4938, 3932], 5=>[19982], 6=>[501787]}
     expect(grouped).to eq(expected)
   end
