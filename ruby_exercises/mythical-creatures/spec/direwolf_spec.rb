@@ -71,12 +71,14 @@ RSpec.describe Direwolf do
     rob_stark = Stark.new('Rob')
     bran_stark = Stark.new('Bran')
     arya_stark = Stark.new('Arya')
+    randomstark = Stark.new("Jeff")
 
     summer_wolf.protects(sansa_stark)
     summer_wolf.protects(jon_stark)
     lady_wolf.protects(rob_stark)
     lady_wolf.protects(bran_stark)
     lady_wolf.protects(arya_stark)
+    # require "pry"; binding.pry
 
     expect(summer_wolf.starks_to_protect).to include(sansa_stark)
     expect(summer_wolf.starks_to_protect).to include(jon_stark)

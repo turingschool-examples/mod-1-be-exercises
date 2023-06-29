@@ -48,14 +48,14 @@ class Human
     @knocked_out = false
   end
   def encounter(the_ogre)
-      @encounter_counter += 1
+    @encounter_counter += 1
       if encounter_counter % 3 == 0
           @notices_ogre = true
           the_ogre.swing_at(self)
       else
           @notices_ogre = false
-        end
       end
+    end
   def notices_ogre?
         @notices_ogre    
   end
@@ -63,6 +63,13 @@ class Human
       @knocked_out = true
   end
   def knocked_out?
-      knocked_out
+      @knocked_out
   end
 end
+
+ogre1 = Ogre.new("Zanzabar")
+
+puts ogre1.name
+puts ogre1.encounter_counter
+
+p ogre1
