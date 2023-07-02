@@ -69,7 +69,7 @@ RSpec.describe Werewolf do
     
     def initialize(name)
       @name = name 
-      @status = :alive
+      @status = :alive #this is a symbol
     end
   end
   
