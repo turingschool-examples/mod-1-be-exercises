@@ -9,7 +9,7 @@ class Werewolf
   end
   def hungry?
     @hungry
-  end
+  end 
   def human? 
     @is_human
   end

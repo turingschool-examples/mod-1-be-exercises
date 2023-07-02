@@ -1,0 +1,3 @@
+[submodule "ruby_exercises/phoenix_mythical_creature"]
+	path = ruby_exercises/phoenix_mythical_creature
+	url = git@github.com:Antoine-Aube/phoenix_mythical_creature.git
