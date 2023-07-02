@@ -27,7 +27,7 @@ class Werewolf
     !@is_human
   end
   def eat(victim)
-    return if human? #The method exists is the werewold.human? == true 
+    return if human? #The method exits is the werewolf.human? == true 
 
     victim.status = :dead 
     @victims_consumed << victim  
