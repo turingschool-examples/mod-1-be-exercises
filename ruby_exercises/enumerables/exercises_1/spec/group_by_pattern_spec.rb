@@ -53,7 +53,7 @@ RSpec.describe 'group by pattern' do
   it 'group by number of zeroes' do
     numbers = [1, 3, 500, 200, 4000, 3000, 10000, 90, 20, 500000]
     # Your code goes here
-    grouped = Hash.new {|hash, key| hash[key] = []}
+    grouped =           
     numbers.each do |number|
       grouped[number.to_s.count("0")] << number
     end
