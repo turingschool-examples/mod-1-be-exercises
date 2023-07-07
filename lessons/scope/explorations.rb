@@ -33,13 +33,19 @@ require 'pry'
 
 ## Example 5
 
-# def print_variable
-#   x = 4
+# def print_variable(x)
+#   puts x
 # end
 
 # x = 2
-# print_variable
+# print_variable(x)
 # puts x
+
+# def new_printable
+#   puts 10
+# end
+
+# new_printable
 
 ##
 
@@ -74,8 +80,8 @@ require 'pry'
 ## Example 13
 
 # def print_variable(x)
-# x = 4
-# puts x
+#   x = 4
+#   puts x
 # end
 
 # print_variable(2)
@@ -132,10 +138,10 @@ require 'pry'
 
 ## Example 19
 
-# numbers = [1,2,3]
-# def number
-#   0
-# end
-# numbers.each do |number|
-#   puts number
-# end
+numbers = [1,2,3]
+def number
+  0
+end
+numbers.each do |number|
+  puts number
+end
