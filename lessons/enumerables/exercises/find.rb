@@ -3,6 +3,9 @@
 
 def find_first_long_named_sister
     sisters = ["Rose", "Kathleen", "Eunice", "Patricia", "Jean"]
+    sisters.find do |sister|
+        sister.length > 4
+    end
   
     ### YOUR CODE HERE
 

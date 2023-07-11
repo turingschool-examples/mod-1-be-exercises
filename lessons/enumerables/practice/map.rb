@@ -5,18 +5,26 @@
 def capitalize
     names = ["alice", "bob", "charlie"]
 
-    # Your code goes here
+    names.map do |name|
+        name.capitalize
+    end
 
+    # Your code goes here
     # expected return value is ["Alice", "Bob", "Charlie"]
 end
-
+p capitalize
 def doubles
     numbers = [1, 2, 3, 4, 5]
+
+    numbers.map do |number|
+        number * 2
+    end
 
     # Your code goes here
 
     # expected return value is [2, 4, 6, 8, 10]
 end
+p doubles
 
 def squares
     numbers = [1, 2, 3, 4, 5]
@@ -36,12 +44,15 @@ end
 
 def normalize_zip_codes
     numbers = [234, 10, 9119, 38881]
+    numbers.map do |number|
+        "%05d" % number # this is a Regex or regular expression
+    end
 
     # Your code goes here
 
     # expected return value is ["00234", "00010", "09119", "38881"]
 end
-
+p normalize_zip_codes
 def backwards
     names = ["alice", "bob", "charlie", "david", "eve"]
 

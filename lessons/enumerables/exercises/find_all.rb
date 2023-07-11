@@ -4,7 +4,9 @@
 
 def find_all_nums_divisible_by_3
     numbers = [1,2,3,4,5,6,7,8,9]
-    
+    numbers.find_all do |number|
+        number % 3 == 0
+    end
     ### YOUR CODE HERE
   
     # should return [3,6,9]
@@ -12,3 +14,4 @@ end
 
 
 p find_all_nums_divisible_by_3
+
