@@ -3,9 +3,9 @@ class Wizard
   attr_reader :name
   attr_accessor :bearded
 
-  def initialize(name, bearded: true)
+  def initialize(name, bearded = {bearded: true})
     @name = name
-    @bearded = bearded
+    @bearded = bearded[:bearded]
   end
 
   def bearded?
