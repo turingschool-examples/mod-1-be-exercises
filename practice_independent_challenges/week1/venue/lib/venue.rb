@@ -1,17 +1,15 @@
 class Venue
   attr_reader :name,
-              :capacity
+              :capacity,
+              :patrons
   
   def initialize(name, capacity)
     @name = name
     @capacity = capacity
+    @patrons = []
   end
 
-  def patrons
-    empty = []
-
-    if capacity == capacity
-      empty
-    end
+  def add_patron(customer)
+    @patrons << customer
   end
 end
