@@ -7,9 +7,11 @@ RSpec.describe 'group by pattern' do
       grouped[word.length] << word
       # require "pry"; binding.pry
     end
+    require "pry"; binding.pry
     expected = {3=>["sue", "dog", "cat"], 4=>["adam", "fort", "tops"], 5=>["alice", "steve", "sally"]}
     expect(grouped).to eq(expected)
   end
+  
 
   it 'groups by odds and evens' do
     numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
@@ -53,7 +55,8 @@ RSpec.describe 'group by pattern' do
   it 'group by number of zeroes' do
     numbers = [1, 3, 500, 200, 4000, 3000, 10000, 90, 20, 500000]
     # Your code goes here
-    grouped =           
+    grouped = Hash.new {|hash, key| hash[key] = []}
+               
     numbers.each do |number|
       grouped[number.to_s.count("0")] << number
     end
