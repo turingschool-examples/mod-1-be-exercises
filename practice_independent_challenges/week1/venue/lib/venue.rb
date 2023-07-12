@@ -8,5 +8,6 @@ class Venue
   end
 
   def add_patron(name)
+    @patrons << name
   end
 end
