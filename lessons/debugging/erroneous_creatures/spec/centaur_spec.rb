@@ -3,7 +3,7 @@ require './lib/centaur'
 RSpec.describe Centaur do
   it "has a name" do
     centaur = Centaur.new("George","Palomino")
-
+    require 'pry';binding.pry
     expect(centaur.name).to eq("George")
   end
 
