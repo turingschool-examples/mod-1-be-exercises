@@ -16,7 +16,7 @@ describe Venue do
     end
 
     it 'can read the capacity' do
-      skip
+      # skip
       venue = Venue.new('Bluebird', 4)
       expect(venue.capacity).to eq 4
     end
