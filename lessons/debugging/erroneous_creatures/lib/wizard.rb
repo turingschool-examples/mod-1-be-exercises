@@ -5,7 +5,7 @@ class Wizard
 
   def initialize(name, bearded = {bearded: true})
     @name = name
-    @bearded = bearded
+    @bearded = bearded[:bearded]
   end
 
   def bearded?

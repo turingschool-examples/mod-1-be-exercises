@@ -11,10 +11,11 @@ def find_first_seven_letter_word # this one is done for you
 
     # expected return value is "unicorn"
 end
-
+p find_first_seven_letter_word
 def no_waldo
     words = ["scarf", "sandcastle", "flag", "pretzel", "crow", "key"]
-    found = words.find do |word|
+    words.find do |word|
+        word == "waldo"
 
       # Your code goes here
 
@@ -22,15 +23,19 @@ def no_waldo
 
     # expected return value is nil
 end
-
+p no_waldo
 def find_waldo
     words = ["noise", "dog", "fair", "house", "waldo", "bucket", "fish"]
+
+    words.find do |word|
+        word == "waldo"
+    end
 
     # Your code goes here
 
     # expected return value is "waldo"
 end
-
+p find_waldo
 def cannot_find_3_letter_words
     words = ["piglet", "porridge", "bear", "blueberry"]
 
