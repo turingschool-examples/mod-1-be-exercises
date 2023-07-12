@@ -11,8 +11,15 @@ RSpec.describe Potluck do
     
     it "has a date instance variable" do 
       potluck = Potluck.new("7-13-18")
-
+      
       expect(potluck.date).to eq("7-13-18")
+    end
+    
+    it "has an empty dish instance variable" do 
+      potluck = Potluck.new("7-13-18")
+
+      expect(potluck.dishes).to eq([])
+
     end
   end
 end
