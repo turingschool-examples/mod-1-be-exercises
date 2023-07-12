@@ -10,7 +10,7 @@ describe Venue do
     end
 
     it 'can read the name' do
-      skip
+      # skip
       venue = Venue.new('Bluebird', 4)
       expect(venue.name).to eq 'Bluebird'
     end
