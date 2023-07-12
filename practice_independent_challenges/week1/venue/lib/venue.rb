@@ -10,4 +10,7 @@ class Venue
   def add_patron(name)
     @patrons << name
   end
+
+  def yell_at_patrons
+  end
 end
