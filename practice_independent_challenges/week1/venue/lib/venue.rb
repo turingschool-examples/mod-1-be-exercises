@@ -6,4 +6,12 @@ class Venue
     @name = name
     @capacity = capacity
   end
+
+  def patrons
+    empty = []
+
+    if capacity == capacity
+      empty
+    end
+  end
 end
