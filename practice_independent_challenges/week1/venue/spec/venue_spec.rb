@@ -4,7 +4,7 @@ require './lib/venue'
 describe Venue do
   describe '#initialize' do
     it 'is a venue' do
-      skip
+      # skip
       venue = Venue.new('Bluebird', 4)
       expect(venue).to be_a Venue
     end
