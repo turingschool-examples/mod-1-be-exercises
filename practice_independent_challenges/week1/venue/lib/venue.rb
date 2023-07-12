@@ -7,6 +7,6 @@ class Venue
     @patrons = []
   end
 
-  def add_patron
+  def add_patron(name)
   end
 end
