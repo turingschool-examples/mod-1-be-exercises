@@ -22,7 +22,7 @@ describe Venue do
     end
 
     it 'has no patrons by default' do
-      skip
+      # skip
       venue = Venue.new('Bluebird', 4)
       expect(venue.patrons).to eq []
     end
