@@ -65,6 +65,5 @@ class Potluck
 
     category_ratio = quantity_in_category/total_dishes * 100
     category_ratio
-
   end
 end
