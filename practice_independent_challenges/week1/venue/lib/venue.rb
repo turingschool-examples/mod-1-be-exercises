@@ -21,4 +21,10 @@ class Venue
     false
    end
   end
+
+  def kick_out
+    while @patrons.length > capacity
+      @patrons.pop(1)    
+    end
+  end
 end
