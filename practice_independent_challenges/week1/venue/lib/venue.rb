@@ -5,4 +5,12 @@ class Venue
     @capacity = capacity
     @patrons = []
   end
+
+  def add_patron(patron_name)
+    @patrons << patron_name
+  end
+
+  def yell_at_patrons
+    @patrons.map(&:upcase)
+  end
 end
