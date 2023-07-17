@@ -1,39 +1,4 @@
-# Challenge 1:
-# Return the name ("Denver Biscuit")
-# Return the rating (4.5)
-# Return a list of accepted transactions (["pickup", "delivery"])
-# Return the first listed category title ("Sandwiches")
-# Return the opening hour on Tuesday (day 1) ("0800")
-# Return the closing hour on Saturday (day 5) ("1500")
-# Return the current open status (is_now_open) (true)
-
-# Challenge 2: 
-# Get the address, and return it into a readable format. ("3237 E Colfax Ave, Denver, CO 80206" )
-# Return a list of categories this restaurant fits into (["Sandwiches", "Breakfast & Brunch"])
-
-
-# Challenge 3 (extra spicy): 
-# Get the operation hours, and format a return value such that it looks like this: 
-
-# {
-#     Monday: {
-#             start: "0800" , 
-#             end: "1400"
-#         },
-#     Tuesday: {
-#             start: "0800" , 
-#             end: "1400"
-#         },
-#     Wednesday: {
-#             start: "0800", 
-#             end: "1400"
-#         },
-#         ...
-#         ...
-#         ....
-
-# }
-# Note: day 0 is Monday, day 6 is Sunday
+# Using the hash below, work through the challenges listed below (at the bottom). 
 
 denver_biscuit_co = {
     id: "gagUrh3806qc5hZ14F0Odw",
@@ -137,3 +102,40 @@ denver_biscuit_co = {
     ]
 }
 
+
+# Challenge 1:
+# Return the name ("Denver Biscuit")
+# Return the rating (4.5)
+# Return a list of accepted transactions (["pickup", "delivery"])
+# Return the first listed category title ("Sandwiches")
+# Return the opening hour on Tuesday (day 1) ("0800")
+# Return the closing hour on Saturday (day 5) ("1500")
+# Return the current open status (is_now_open) (true)
+
+# Challenge 2: 
+# Get the address, and return it into a readable format. ("3237 E Colfax Ave, Denver, CO 80206" )
+# Return a list of categories this restaurant fits into (["Sandwiches", "Breakfast & Brunch"])
+
+
+# Challenge 3 (extra spicy): 
+# Get the operation hours, and format a return value such that it looks like this: 
+
+# {
+#     Monday: {
+#             start: "0800" , 
+#             end: "1400"
+#         },
+#     Tuesday: {
+#             start: "0800" , 
+#             end: "1400"
+#         },
+#     Wednesday: {
+#             start: "0800", 
+#             end: "1400"
+#         },
+#         ...
+#         ...
+#         ....
+
+# }
+# Note: day 0 is Monday, day 6 is Sunday
