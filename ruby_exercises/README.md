@@ -87,7 +87,7 @@ Once `bundle` has run successfully, open up the first test!
 
 ```
 $ cd data-types/strings
-$ atom .
+$ code .
 ```
 
 And read through the `README.md` for further instructions!
