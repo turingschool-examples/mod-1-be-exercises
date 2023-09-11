@@ -17,9 +17,9 @@ cities_lived_in = {
 # Write code that iterates through the `cities_lived_in` hash, and returns a list of  
 # names of the humans who've lived in Philadelphia.
 
-# [:michaela, :mike, :salvador]
+# [:michaela, :mike, :alex]
 # or
-# ["Michaela", "Mike", "Salvador"]
+# ["Michaela", "Mike", "Alex"]
 
 
 
