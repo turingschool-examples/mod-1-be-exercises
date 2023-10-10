@@ -33,7 +33,7 @@ pry(main)> mod_1.students
 **Note:** Pay attention to the Student objects in the return value above. What is the format of the `name` attribute? 
 
 pry(main)> mod_1.student_names
-=> ["Chris","Richard","Meg", "Kat"]
+=> ["Chris","Richard","Meg","Kat"]
 
 
 pry(main)> mod_1.alphabetical_student_names
