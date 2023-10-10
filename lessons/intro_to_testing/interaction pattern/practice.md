@@ -37,5 +37,5 @@ pry(main)> mod_1.student_names
 
 
 pry(main)> mod_1.alphabetical_student_names
-=>  ["Chris","Kat", "Meg","Richard"]
+=>  ["Chris","Kat","Meg","Richard"]
 ```
