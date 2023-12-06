@@ -2,6 +2,7 @@
 
 # Take a look at this example.
 # 1. What do you think the output will be on line 14?
+  # ['richard', 'chris', 'dani']
 # 2. Now run it in your terminal.
 # 3. Was the output what you thought it would be?
 

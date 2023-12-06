@@ -10,7 +10,7 @@ class Medusa
 
   def stare(x)
     x.stone = true
-    @statues = x
+    @statues << x
   end
 
   def statues
@@ -31,6 +31,10 @@ class Person
 
   def stoned?
     @stone
+  end
+
+  def count
+    @statues
   end
 
 end

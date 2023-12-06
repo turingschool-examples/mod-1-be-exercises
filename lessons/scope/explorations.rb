@@ -30,7 +30,8 @@ require 'pry'
 
 # x = 2
 # print_variable
-
+# puts x
+# ¥
 ## Example 5
 
 # def print_variable
@@ -38,7 +39,7 @@ require 'pry'
 # end
 
 # x = 2
-# print_variable
+# puts print_variable
 # puts x
 
 ##
@@ -79,7 +80,7 @@ require 'pry'
 # end
 
 # print_variable(2)
-# puts x
+# puts 'x'
 
 #### BLOCK SCOPE
 
