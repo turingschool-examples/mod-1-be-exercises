@@ -28,7 +28,7 @@ RSpec.describe Vampire do
   it "is thirsty by default" do
     vampire = Vampire.new("Count von Count", "black")
 
-    expect(vampire.thirsty?).to eq(true)
+    expect(vampire.thirsty).to eq(true)
   end
 
   it "is not thirsty after drinking" do
@@ -36,7 +36,7 @@ RSpec.describe Vampire do
 
     vampire.drink
 
-    expect(vampire.thirsty?).to eq(false)
+    expect(vampire.thirsty).to eq(false)
   end
 
   it "wears a cape that can be any color" do
@@ -68,6 +68,6 @@ RSpec.describe Vampire do
     vampire.sleep
     vampire.wake
 
-    expect(vampire.thirsty?).to eq(true)
+    expect(vampire.thirsty).to eq(true)
   end
 end
