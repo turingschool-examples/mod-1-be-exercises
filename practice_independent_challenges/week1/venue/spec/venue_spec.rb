@@ -58,4 +58,6 @@ describe Venue do
       venue.add_patron('James')
       venue.add_patron('Cat')
       expect(venue.over_capacity?).to be true
+    end
+  end
 end
