@@ -22,4 +22,10 @@ class Venue
    def over_capacity?
       @patrons.length > @capacity
    end
+
+   def kick_out
+      if @patrons.length > @capacity
+         @patrons.pop
+      end
+   end
 end
