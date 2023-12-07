@@ -18,4 +18,8 @@ class Venue
       end
       yell_names
    end
+
+   def over_capacity?
+      @patrons.length > @capacity
+   end
 end
