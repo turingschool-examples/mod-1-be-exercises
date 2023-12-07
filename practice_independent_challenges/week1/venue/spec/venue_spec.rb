@@ -48,7 +48,7 @@ describe Venue do
   end
 
   describe "#over_capacity?" do
-    it 'returns true or false depending on the capacity and number of patrons' do
+    it 'returns true or false if there is more patrons than capacity' do
       venue = Venue.new('Bluebird', 4)
       venue.add_patron('Mike')
       venue.add_patron('Megan')
@@ -58,6 +58,20 @@ describe Venue do
       venue.add_patron('James')
       venue.add_patron('Cat')
       expect(venue.over_capacity?).to be true
+    end
+  end
+
+  describe '#kick_out' do
+    it 'removes patrons until it is no longer over capacity' do
+      venue = Venue.new('Bluebird', 4)
+      venue.add_patron('Mike')
+      venue.add_patron('Megan')
+      venue.add_patron('Bob')
+      venue.add_patron('James')
+      venue.add_patron('Cat')
+      venue.add_patron('Joe')
+
+      venue.kick_out
     end
   end
 end
