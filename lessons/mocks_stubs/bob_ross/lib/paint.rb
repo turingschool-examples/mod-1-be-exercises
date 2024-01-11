@@ -4,6 +4,5 @@ class Paint
   def initialize(color, amount = 0)
     @color = color
     @amount = amount
-    sleep(2)
   end
 end

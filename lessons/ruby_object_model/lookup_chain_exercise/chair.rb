@@ -2,6 +2,7 @@ require "./chair_module"
 require "./furniture"
 
 class Chair < Furniture
+include FurnitureModule
   include ChairModule
 
   def initialize
@@ -18,10 +19,11 @@ class Chair < Furniture
     "method"
   end
 
-  def soft
-    "class"
-  end
+  # def soft
+  #   "class"
+  # end
 
 end
 
 Chair.new.chair_type
+require 'pry'; binding.pry

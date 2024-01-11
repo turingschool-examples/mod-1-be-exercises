@@ -33,8 +33,10 @@ RSpec.describe Bob do
       bob = Bob.new
       paint_1 = Paint.new("Alizarin Crimson")
       paint_2 = Paint.new("Van Dyke Brown")
+  
       bob.add_paint(paint_1)
       bob.add_paint(paint_2)
+    
 
       expect(bob.paint_colors).to eq(["Alizarin Crimson", "Van Dyke Brown"])
     end
@@ -47,7 +49,10 @@ RSpec.describe Bob do
       bob.add_paint(paint_1)
       bob.add_paint(paint_2)
 
+    
       expect(bob.total_paint_amount).to eq(67)
     end
   end
+
+
 end
