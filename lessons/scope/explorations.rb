@@ -49,7 +49,7 @@ require 'pry'
 ## Example 10
 
 # def print_variable(x)
-# puts x
+#   puts x
 # end
 
 # print_variable(4)
