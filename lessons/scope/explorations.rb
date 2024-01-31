@@ -35,6 +35,7 @@ require 'pry'
 
 # def print_variable
 #   x = 4
+#   puts x
 # end
 
 # x = 2
