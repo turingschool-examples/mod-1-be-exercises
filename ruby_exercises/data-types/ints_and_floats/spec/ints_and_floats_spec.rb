@@ -1,14 +1,15 @@
+require './lib/ints_and_floats'
+
 RSpec.describe 'ints and floats' do
   it 'test 1' do
-    lucky = 7
-    unlucky = 13
+    Ints_and_floats.new(7, 13)
     # Using the two variables defined above,
     # add the lucky number and the unlucky number
     sum = ________
     expect(sum).to eq(20)
   end
 
-  xit 'test 2' do
+  it 'test 2' do
     lucky = 7
     unlucky = 13
     # Using the two variables defined above,
@@ -17,7 +18,7 @@ RSpec.describe 'ints and floats' do
     expect(difference).to eq(-6)
   end
 
-  xit 'test 3' do
+  it 'test 3' do
     lucky = 7
     unlucky = 13
     # Using the two variables defined above,
@@ -27,16 +28,16 @@ RSpec.describe 'ints and floats' do
     expect(quotient).to eq(1)
   end
 
-  xit 'test 4' do
+  it 'test 4' do
     lucky = 7
     unlucky = 13
     # Using the two variables defined above,
     # divide unlucky by lucky
     quotient = ________
-    expect(quotient).to eq(1.8571428571428572)
+    expect(quotient.to_f).to eq(1.8571428571428572)
   end
 
-  xit 'test 5' do
+  it 'test 5' do
     lucky = 7
     unlucky = 13
     # Using the two variables defined above,
