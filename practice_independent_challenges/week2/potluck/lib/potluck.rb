@@ -22,9 +22,9 @@ class Potluck
         apps = get_all_from_category(:appetizer)
         entres = get_all_from_category(:entre)
         desserts = get_all_from_category(:dessert)
-        {appetizer: apps, 
-         entre: entres, 
-         dessert: desserts
+        {appetizer: => apps, 
+         entre: => entres, 
+         dessert:=> desserts
         }
     end
 end
