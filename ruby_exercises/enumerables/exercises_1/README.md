@@ -4,7 +4,7 @@ That said, here's the summary:
 
 ------------------
 
-Open up `map_pattern_spec.rb` and `map_spec.rb` in Atom, side by side:
+Open up `map_pattern_spec.rb` and `map_spec.rb` in VS Code, side by side:
 
 ![Set up map and map_pattern_spec side by side](/images/enumerables-setup-map.jpg)
 
