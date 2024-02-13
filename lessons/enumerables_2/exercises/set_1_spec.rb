@@ -53,8 +53,8 @@ describe "#min/#max/#min_by/#max_by" do
       ["Stella", 8]
     ]
 
-    lowest_valued_name = #code here
+    highest_valued_name = #code here
 
-    expect(lowest_valued_name).to eq("Scarlett")
+    expect(highest_valued_name).to eq("Scarlett")
   end
 end
