@@ -29,5 +29,4 @@ Tests:
 
 ## Questions
   1. What is similar/different between the two main classes?
-  2. What design principle(s) are we breaking? Prepare to explain.
-  3. How might we use mixins to make our code better?
+  2. How might we use mixins to make our code better?
