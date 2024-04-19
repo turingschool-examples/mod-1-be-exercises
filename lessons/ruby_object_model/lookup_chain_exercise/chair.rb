@@ -2,7 +2,6 @@ require "./chair_module"
 require "./furniture"
 
 class Chair < Furniture
-include FurnitureModule
   include ChairModule
 
   def initialize
