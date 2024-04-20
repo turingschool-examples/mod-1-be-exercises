@@ -5,23 +5,25 @@
 def capitalize
     names = ["alice", "bob", "charlie"]
 
-    # Your code goes here
-
-    # expected return value is ["Alice", "Bob", "Charlie"]
+    names.map do |name|
+        name.capitalize
+    end
 end
 
 def doubles
     numbers = [1, 2, 3, 4, 5]
-
-    # Your code goes here
-
+    numbers.map do |number|
+        number * 2
+    end
     # expected return value is [2, 4, 6, 8, 10]
 end
 
 def squares
     numbers = [1, 2, 3, 4, 5]
 
-    # Your code goes here
+    numbers.map do |number|
+        number ** 2
+    end
 
     # expected return value is [1, 4, 9, 16, 25]
 end

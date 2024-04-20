@@ -1,10 +1,10 @@
 require './spec/spec_helper'
-require './lib/centaur'
+require './lib/centaur.rb'
 
 RSpec.describe Centaur do
   it 'has a name' do
-    centaur = Centaur.new('George', 'Palomino')
-    expect(centaur.name).to eq('George')
+    centaur = Centaur.new('George', 'Palomino') #setup
+    expect(centaur.name).to eq('George') #execution (calling the method) and assertion
   end
 
   it 'has a horse breed' do
@@ -37,9 +37,12 @@ RSpec.describe Centaur do
     expect(centaur.cranky?).to be false
 
     centaur.run
-    centaur.shoot
-    centaur.run
+    expect(centaur.cranky?).to be false
 
+    centaur.shoot
+    expect(centaur.cranky?).to be false
+    
+    centaur.run
     expect(centaur.cranky?).to be true
   end
 
@@ -113,14 +116,22 @@ RSpec.describe Centaur do
   end
 
   it 'becomes rested after drinking a potion' do
-    # your code here
+    centaur = Centaur.new('George', 'Palomino')
+    centaur.drink_potion
+    expect(centaur.rested?).to eq true
   end
 
   it 'can only drink a potion whilst standing' do
-    # your code here
+    centaur = Centaur.new('George', 'Palomino')
+    centaur.lay_down
+    centaur.drink_potion
+    expect(centaur.drink_potion).to eq 'NO!'
   end
 
-  it 'gets stick if a potion is drunk while rested' do
-    # your code here
+  it 'gets sick if a potion is drunk while rested' do
+    centaur = Centaur.new('George', 'Palomino')
+    centaur.drink_potion
+    centaur.drink_potion
+    expect(centaur.drink_potion).to eq 'I am too ill to carry on!'
   end
 end
