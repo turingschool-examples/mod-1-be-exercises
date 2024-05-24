@@ -20,7 +20,7 @@
 
 Test Driven Development is a powerful tool used to drive your code. At Turing, TDD will be essential.
 RSpec is the testing framework that you will use during your time at Turing.
-This repository is used in conjunction with the `intro_to_testing` [lesson](https://backend.turing.edu/module1/lessons/intro_to_testing).
+This repository is used in conjunction with the `intro_to_testing` [lesson](https://curriculum.turing.edu/module1/lessons/intro_to_testing).
 
 We will work with the files in this order:
  - `interaction/example.md` to reference the interaction pattern used in lesson.
@@ -175,7 +175,7 @@ end
 
 ## Practice
 
-- [lesson](https://backend.turing.edu/module1/lessons/intro_to_testing)
+- [lesson](https://curriculum.turing.edu/module1/lessons/intro_to_testing)
 
 <div class="back-to-top-wrapper">
   <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
